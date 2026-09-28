@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// var name=prompt("你的名字");
+			let s=Math.floor(Math.random()*100)+1;
+			console.log(s);
+			let g=10;
+			let c=0;
+			let z=prompt("输入一个数字,100以内,不包括负数");
+			while(c<=g){
+				c++
+				console.log("剩余次数:"+(g-c)+"次");
+				if(s==z){
+					alert("你猜对了"); break;
+				}
+				else if(c==g){
+					alert("你居然输了");  break;
+				} 
+				else{
+					alert(z<s?"猜小了":"猜大了")
+					z=prompt("继续猜，你还有"+(g-c)+"次机会");
+				}
+			}
+			
+		</script>
+		
+	</body>
+</html>
